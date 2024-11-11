@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Écran Divisé</title>
+  <style>
+    .container {
+      display: flex;
+      height: 100vh;
+    }
 
+    .left, .right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .left {
+      background-color: #f0f0f0;
+    }
+
+    .right {
+      background-color: #e0e0e0;
+    }
+    iframe {
+      width: 90%;
+      height: 90%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="left">
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+  </div>
+  <div class="right">
+    <iframe src="https://app.wooclap.com/WOOCALP_ID"></iframe>
+  </div>
+</div>
+</body>
+</html>
